@@ -21,11 +21,11 @@ public class Move : MonoBehaviour
     void Update()
     {
             Vector3 plpos = player.transform.position;
-            if (player.transform.position.x>17 || player.transform.position.x < -17)
+            if (player.transform.position.x>17.5f || player.transform.position.x < -17.5f)
             {
             player.transform.position = new Vector3(-plpos.x,plpos.y,plpos.z);
             }
-            if (player.transform.position.y>10 || player.transform.position.y < -10)
+            if (player.transform.position.y>=8.5f || player.transform.position.y <= -8.5f)
             {
              player.transform.position = new Vector3(plpos.x, -plpos.y, plpos.z);
             }
